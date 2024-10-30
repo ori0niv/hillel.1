@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
+<script>
+
+    let result = '';
+    function func(str, charsToRemove) {
+
+    for (let i = 0; i < str.length; i++) {
+      let char = str[i];
+
+      if (!charsToRemove.includes(char)) {
+        result += char;
+      }
+    }
+
+    return result;
+  }
+
+  console.log(func("hello world", ['l', 'd'])); // "heo wor"
+</script>
 <body>
-$END$
+
 </body>
 </html>
